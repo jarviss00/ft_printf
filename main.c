@@ -1,26 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sshresth <sshresth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/02 01:05:15 by sshresth          #+#    #+#             */
-/*   Updated: 2024/04/02 17:26:26 by sshresth         ###   ########.fr       */
+/*   Created: 2024/04/02 18:12:26 by sshresth          #+#    #+#             */
+/*   Updated: 2024/04/02 18:12:27 by sshresth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#include "ft_printf.h"
 
-struct	s_printf
+int main(void)
 {
-} typedef s_printf;
-
-#include "libft/libft.h"
-int	ft_printf(const char *format, ...);
-int	ft_apply_cs(const char *format, va_list args, int index);
-int ft_apply_bs(const char *format, int index);
-int	ft_apply_str(va_list args, int index);
-
-#endif
+	ft_printf("%s\n","hello");
+	return (0);
+}
