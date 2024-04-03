@@ -6,7 +6,7 @@
 /*   By: sshresth <sshresth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/03 19:54:41 by sshresth          #+#    #+#             */
-/*   Updated: 2024/04/03 20:42:56 by sshresth         ###   ########.fr       */
+/*   Updated: 2024/04/03 22:42:34 by sshresth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,7 @@ int	ft_print_u(unsigned int num)
 		length += ft_print_di(num % 10);
 	}
 	else if (num < 10)
-		length = ft_print(num + 48);
+		length = ft_print_c(num + 48);
 	return (length);
 }
 
