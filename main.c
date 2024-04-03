@@ -6,7 +6,7 @@
 /*   By: sshresth <sshresth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/02 18:12:26 by sshresth          #+#    #+#             */
-/*   Updated: 2024/04/02 18:12:27 by sshresth         ###   ########.fr       */
+/*   Updated: 2024/04/03 19:11:12 by sshresth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 int main(void)
 {
-	ft_printf("%s\n","hello");
+	ft_printf("%s","hello");
 	return (0);
 }

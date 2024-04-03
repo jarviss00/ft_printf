@@ -6,21 +6,22 @@
 /*   By: sshresth <sshresth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/02 01:05:15 by sshresth          #+#    #+#             */
-/*   Updated: 2024/04/02 17:26:26 by sshresth         ###   ########.fr       */
+/*   Updated: 2024/04/03 20:41:21 by sshresth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-struct	s_printf
-{
-} typedef s_printf;
-
 #include "libft/libft.h"
+
 int	ft_printf(const char *format, ...);
-int	ft_apply_cs(const char *format, va_list args, int index);
-int ft_apply_bs(const char *format, int index);
-int	ft_apply_str(va_list args, int index);
+int	ft_apply(va_list args, const char format);
+int	ft_print_c(int c);
+int ft_print_s(char *str);
+int	ft_print_p(unsigned	long int num);
+int	ft_print_di(int	num);
+int	ft_print_u(unsigned int num);
+int	ft_print_x(unsigned int num, int flag);
 
 #endif
