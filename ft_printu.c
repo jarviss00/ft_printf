@@ -1,15 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_printu.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sshresth <sshresth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/06 02:30:49 by sshresth          #+#    #+#             */
-/*   Updated: 2024/04/06 02:32:24 by sshresth         ###   ########.fr       */
+/*   Created: 2024/04/06 05:08:45 by sshresth          #+#    #+#             */
+/*   Updated: 2024/04/06 10:38:41 by sshresth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft/libft.h"
+#include "include/ft_printf.h"
 
-int	ft_printf(const char *format, ...);
+int	ft_printu(t_printf	*s_data)
+{
+
+}

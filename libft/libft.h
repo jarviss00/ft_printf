@@ -6,7 +6,7 @@
 /*   By: sshresth <sshresth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 21:35:46 by sshresth          #+#    #+#             */
-/*   Updated: 2024/03/28 02:29:51 by sshresth         ###   ########.fr       */
+/*   Updated: 2024/04/06 02:40:22 by sshresth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@
 # include <string.h>
 # include <ctype.h>
 # include <stdlib.h>
-# include <stdbool.h>
-# include <stdarg.h>
 # include <limits.h>
 
 typedef struct s_list

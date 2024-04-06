@@ -1,17 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*   ft_printx.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sshresth <sshresth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/06 02:30:52 by sshresth          #+#    #+#             */
-/*   Updated: 2024/04/06 02:31:47 by sshresth         ###   ########.fr       */
+/*   Created: 2024/04/06 05:06:59 by sshresth          #+#    #+#             */
+/*   Updated: 2024/04/06 10:38:44 by sshresth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "include/ft_printf.h"
 
-int	ft_printf(const char *format, ...)
+int	ft_printx(char character, t_printf *s_data)
 {
+
 }
