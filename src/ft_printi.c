@@ -6,13 +6,13 @@
 /*   By: sshresth <sshresth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 04:05:10 by sshresth          #+#    #+#             */
-/*   Updated: 2024/04/06 11:35:37 by sshresth         ###   ########.fr       */
+/*   Updated: 2024/04/09 17:30:28 by sshresth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/ft_printf.h"
 
-static int	ft_print(t_printf *s_data, int length, int sign)
+static int	ft_len(t_printf *s_data, int length, int sign)
 {
 	int	returned_length;
 
@@ -84,7 +84,7 @@ void	ft_printi(t_printf *s_data)
 	power = 1;
 	if (number < 0 && sign++)
 		number = -number;
-	length = ft_print(s_data, ft_count_i(number), sign);
+	length = ft_len(s_data, ft_count_i(number), sign);
 	if (s_data->dash == 0)
 		ft_left(s_data, length);
 	ft_zeros(s_data, length, sign, number);

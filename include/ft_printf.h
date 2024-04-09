@@ -6,7 +6,7 @@
 /*   By: sshresth <sshresth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 02:30:49 by sshresth          #+#    #+#             */
-/*   Updated: 2024/04/06 11:34:36 by sshresth         ###   ########.fr       */
+/*   Updated: 2024/04/09 17:26:49 by sshresth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,5 +48,7 @@ void		ft_printc(t_printf *s_data);
 void		ft_prints(t_printf	*s_data);
 void		ft_printp(t_printf	*s_data);
 void		ft_printi(t_printf *s_data);
+void		ft_printu(t_printf	*s_data);
+void		ft_printx(char character, t_printf *s_data);
 
 #endif

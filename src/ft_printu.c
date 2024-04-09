@@ -6,13 +6,13 @@
 /*   By: sshresth <sshresth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 05:08:45 by sshresth          #+#    #+#             */
-/*   Updated: 2024/04/06 17:30:25 by sshresth         ###   ########.fr       */
+/*   Updated: 2024/04/09 17:30:09 by sshresth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/ft_printf.h"
+#include "../include/ft_printf.h"
 
-static int	ft_print(t_printf *s_data, int length)
+static int	ft_len(t_printf *s_data, int length)
 {
 	int	returned_length;
 
@@ -44,7 +44,7 @@ static void	ft_left(t_printf *s_data, int print_len)
 
 static void	ft_zeros(t_printf *s_data, int length, unsigned int number)
 {
-	length -= ft_uintlen(number);
+	length = length - ft_count_dui(number);
 	while (length-- > 0)
 		s_data->total_length += write(1, "0", 1);
 }
@@ -67,7 +67,7 @@ void	ft_printu(t_printf	*s_data)
 
 	number = va_arg(s_data->args, unsigned int);
 	power = 1;
-	length = ft_print(s_data, ft_count_dui(number));
+	length = ft_len(s_data, ft_count_dui(number));
 	if (!s_data->dash)
 		ft_left(s_data, length);
 	ft_zeros(s_data, length, number);

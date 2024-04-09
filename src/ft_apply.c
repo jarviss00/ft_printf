@@ -6,7 +6,7 @@
 /*   By: sshresth <sshresth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 03:49:59 by sshresth          #+#    #+#             */
-/*   Updated: 2024/04/06 17:18:14 by sshresth         ###   ########.fr       */
+/*   Updated: 2024/04/09 17:30:49 by sshresth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,8 +51,8 @@ int	ft_apply_format(t_printf *s_data, const char *format, int f_index)
 		ft_printi(s_data);
 	else if (format[f_index] == 'u')
 		ft_printu(s_data);
-	//else if (format[f_index] == 'x' || format[f_index] == 'X')
-		//ft_printx(format[f_index], s_data);
+	else if (format[f_index] == 'x' || format[f_index] == 'X')
+		ft_printx(format[f_index], s_data);
 	else if (format[f_index] == '%')
 		s_data->total_length += write(1, "%", 1);
 	s_data_clear(s_data);
