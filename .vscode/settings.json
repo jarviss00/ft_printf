@@ -1,9 +1,0 @@
-{
-	"files.associations": {
-		"stdarg.h": "c",
-		"limits.h": "c",
-		"chrono": "c",
-		"ft_printf.h": "c",
-		"libft.h": "c"
-	}
-}
